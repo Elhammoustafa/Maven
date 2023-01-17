@@ -1,0 +1,8 @@
+org\example\stepDef\Hooks.class
+org\example\stepDef\currenciesStepDef.class
+org\example\pages\LoginPage.class
+org\example\pages\HomePage.class
+org\example\pages\RegisterPage.class
+org\example\runners\TestRunner.class
+org\example\stepDef\loginStepDef.class
+org\example\stepDef\registerStepDef.class
