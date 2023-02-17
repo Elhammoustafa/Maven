@@ -1,46 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="65.713" tests="4" skipped="0" failures="2" errors="0">
-<testcase classname="users could register with new accounts" name="user could register with valid data successfully" time="22.623">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.result&quot;}
-  (Session info: chrome=103.0.5060.114)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [31243add5b09f31af9d7ad46d4a5fbed, findElement {using=class name, value=result}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\MAHMOU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52359}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52359/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 31243add5b09f31af9d7ad46d4a5fbed">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".result"}
-  (Session info: chrome=103.0.5060.114)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [31243add5b09f31af9d7ad46d4a5fbed, findElement {using=class name, value=result}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\MAHMOU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52359}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52359/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 31243add5b09f31af9d7ad46d4a5fbed
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy25.getText(Unknown Source)
-	at org.example.stepDef.registerStepDef.registerSuccess(registerStepDef.java:50)
-	at ?.register success(file:///D:/Testing/MAVEN/src/main/resources/features/Registeration.feature:11)
-]]>
-</failure>
+<testsuite name="Cucumber" time="399.196" tests="19" skipped="0" failures="4" errors="0">
+<testcase classname="users could register with new accounts" name="user could register with valid data successfully" time="45.997">
 <system-out><![CDATA[
 Given click on register link................................................passed
 When user select gender type................................................passed
@@ -48,35 +8,28 @@ And user type "automation" and "tester".....................................pass
 And user enter email "test@example.com".....................................passed
 And user enter password fields "P@sswOrd" and confirm password "P@sswOrd"...passed
 And user click on register button...........................................passed
-Then register success.......................................................failed
+Then register success.......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="users choose currency" name="users choose currency" time="11.726">
-<system-out><![CDATA[
-Given user go to home page..................................................passed
-And select euro from currency dropdown......................................passed
-Then verify Euro Symbol is shown............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="user could login the website/app" name="user login with valid data (email &amp; password)" time="20.171">
+<testcase classname="user could login the website" name="user login with valid data (email &amp; password)" time="23.969">
 <failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name='master-wrapper-page']&quot;}
   (Session info: chrome=103.0.5060.114)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8955c4d9f729325a2128a014491f5639, findElement {using=name, value=master-wrapper-page}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\MAHMOU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52391}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52391/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8955c4d9f729325a2128a014491f5639">
+Command: [d2a1077e83b80e0fd2872a4ffd63dd76, findElement {using=name, value=master-wrapper-page}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\MAHMOU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51155}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51155/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2a1077e83b80e0fd2872a4ffd63dd76">
 <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='master-wrapper-page']"}
   (Session info: chrome=103.0.5060.114)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8955c4d9f729325a2128a014491f5639, findElement {using=name, value=master-wrapper-page}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\MAHMOU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52391}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52391/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8955c4d9f729325a2128a014491f5639
+Command: [d2a1077e83b80e0fd2872a4ffd63dd76, findElement {using=name, value=master-wrapper-page}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\MAHMOU~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51155}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51155/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2a1077e83b80e0fd2872a4ffd63dd76
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -92,8 +45,8 @@ Session ID: 8955c4d9f729325a2128a014491f5639
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at org.example.stepDef.loginStepDef.login_successfully(loginStepDef.java:38)
-	at ?.user could login successfully and go to home page(file:///D:/Testing/MAVEN/src/main/resources/features/login.feature:12)
+	at org.example.stepDef.D02_loginStepDef.login_successfully(D02_loginStepDef.java:38)
+	at ?.user could login successfully and go to home page(file:///D:/Testing/MAVEN/src/main/resources/features/F02_Login.feature:12)
 ]]>
 </failure>
 <system-out><![CDATA[
@@ -103,12 +56,161 @@ And user click on login button..............................................pass
 Then user could login successfully and go to home page......................failed
 ]]></system-out>
 </testcase>
-<testcase classname="user could login the website/app" name="user login with invalid data (email &amp; password)" time="10.87">
+<testcase classname="user could login the website" name="user login with invalid data (email &amp; password)" time="23.28">
 <system-out><![CDATA[
 Given user navigate to login page...........................................passed
 When user enter "wrong@example.com" and "P@ssw0rd"..........................passed
 And user click on login button..............................................passed
 Then user could not login successfully......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users choose currency" name="users choose currency" time="13.435">
+<system-out><![CDATA[
+Given user go to home page..................................................passed
+And select euro from currency dropdown......................................passed
+Then verify Euro Symbol is shown............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search in home page" name="user could search by product name - Example #1.1" time="16.111">
+<system-out><![CDATA[
+When user click on search field.............................................passed
+And user search with "book".................................................passed
+And user click on search button.............................................passed
+Then user could find "book" relative result.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search in home page" name="user could search by product name - Example #1.2" time="15.766">
+<system-out><![CDATA[
+When user click on search field.............................................passed
+And user search with "laptop"...............................................passed
+And user click on search button.............................................passed
+Then user could find "laptop" relative result...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search in home page" name="user could search by product name - Example #1.3" time="18.962">
+<system-out><![CDATA[
+When user click on search field.............................................passed
+And user search with "nike".................................................passed
+And user click on search button.............................................passed
+Then user could find "nike" relative result.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search in home page" name="user could search by product sku - Example #1.1" time="19.768">
+<system-out><![CDATA[
+When user click on search field.............................................passed
+And user search with "SCI_FAITH"............................................passed
+And user click on search button.............................................passed
+And user click on product...................................................passed
+Then validate that the sku shown in page "SCI_FAITH"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search in home page" name="user could search by product sku - Example #1.2" time="13.515">
+<system-out><![CDATA[
+When user click on search field.............................................passed
+And user search with "APPLE_CAM"............................................passed
+And user click on search button.............................................passed
+And user click on product...................................................passed
+Then validate that the sku shown in page "APPLE_CAM"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search in home page" name="user could search by product sku - Example #1.3" time="20.32">
+<system-out><![CDATA[
+When user click on search field.............................................passed
+And user search with "SF_PRO_11"............................................passed
+And user click on search button.............................................passed
+And user click on product...................................................passed
+Then validate that the sku shown in page "SF_PRO_11"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="hover categories" name="user hover category" time="12.544">
+<system-out><![CDATA[
+When user hover category and select subcategory.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Home Slider1" name="first slider" time="17.085">
+<failure type="java.lang.AssertionError" message="expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]">
+<![CDATA[java.lang.AssertionError: expected [https://demo.nopcommerce.com/nokia-lumia-1020] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDef.D06_homeSlidersStepDef.get_url(D06_homeSlidersStepDef.java:24)
+	at ?.get url(file:///D:/Testing/MAVEN/src/main/resources/features/F06_homeSliders.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+When user click on first slider.............................................passed
+Then get url................................................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Home Slider1" name="Seconed slider" time="22.501">
+<failure type="java.lang.AssertionError" message="expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]">
+<![CDATA[java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDef.D06_homeSlidersStepDef.get_url2(D06_homeSlidersStepDef.java:36)
+	at ?.get url2(file:///D:/Testing/MAVEN/src/main/resources/features/F06_homeSliders.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+When user click on second slider............................................passed
+Then get url2...............................................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Follow us links" name="user opens facebook link" time="31.598">
+<system-out><![CDATA[
+When user click on facebook link............................................passed
+Then get url from new opened tab "https://www.facebook.com/nopCommerce".....passed
+]]></system-out>
+</testcase>
+<testcase classname="Follow us links" name="user opens twitter link" time="21.165">
+<system-out><![CDATA[
+When user click on twitter link.............................................passed
+Then get url from new opened tab "https://twitter.com/nopCommerce"..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Follow us links" name="user opens rss link" time="21.868">
+<failure type="java.lang.AssertionError" message="expected [2] but found [1]">
+<![CDATA[java.lang.AssertionError: expected [2] but found [1]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:1240)
+	at org.testng.Assert.assertEquals(Assert.java:1274)
+	at org.example.stepDef.D07_followUsStepDef.get_url_from_new_opened_tab(D07_followUsStepDef.java:61)
+	at ?.get url from new opened tab "https://demo.nopcommerce.com/new-online-store-is-open"(file:///D:/Testing/MAVEN/src/main/resources/features/F07_followUs.feature:14)
+]]>
+</failure>
+<system-out><![CDATA[
+When user click on rss link.................................................passed
+Then get url from new opened tab "https://demo.nopcommerce.com/new-online-store-is-open".failed
+]]></system-out>
+</testcase>
+<testcase classname="Follow us links" name="user opens youtube link" time="32.762">
+<system-out><![CDATA[
+When user click on youtube link.............................................passed
+Then get url from new opened tab "https://www.youtube.com/user/nopCommerce".passed
+]]></system-out>
+</testcase>
+<testcase classname="User could add product to Wishlist" name="success message is visible after adding The product to wishlist" time="14.924">
+<system-out><![CDATA[
+When user add product to Wishlist...........................................passed
+Then success message is visible.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could add product to Wishlist" name="wishlist items was increased" time="12.842">
+<system-out><![CDATA[
+When user add product to Wishlist...........................................passed
+Then success message is visible.............................................passed
+And user get num of wishlist items after adding product.....................passed
+Then num of wishlist items increased........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
